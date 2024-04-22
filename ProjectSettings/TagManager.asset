@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Character
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1429442341
+    locked: 0
+  - name: Collision
+    uniqueID: 1973910895
+    locked: 0
+  - name: Character
+    uniqueID: 578052715
+    locked: 0
+  - name: WalkUnder
+    uniqueID: 2495096535
     locked: 0
