@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -44,8 +45,14 @@ TagManager:
   - name: Ground
     uniqueID: 1429442341
     locked: 0
+  - name: InvisibleCollision
+    uniqueID: 1550410845
+    locked: 0
   - name: Collision
     uniqueID: 1973910895
+    locked: 0
+  - name: WalkOver
+    uniqueID: 1547454641
     locked: 0
   - name: Character
     uniqueID: 578052715
