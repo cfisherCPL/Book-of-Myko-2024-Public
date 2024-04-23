@@ -5,9 +5,13 @@ using UnityEngine;
 public class PlayerIsTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
+    void Awake()
+    {
+        //DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
-       GameObject.FindGameObjectWithTag("Music").GetComponent<MusicContinue>().PlayMusic();
+        // GameObject.FindGameObjectWithTag("Music").GetComponent<MusicContinue>().PlayMusic();
  
     }
 

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 2f;
+    
+    public VectorValue startingPosition;
 
     private Rigidbody2D rb;
 
@@ -15,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame
