@@ -6,18 +6,22 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 2f;
     
-    public VectorValue startingPosition;
+    public VectorValue spawnPosition;
 
     private Rigidbody2D rb;
 
     private Vector2 movementDirection;
 
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        transform.position = spawnPosition.initialValue;
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        transform.position = startingPosition.initialValue;
+        
     }
 
     // Update is called once per frame

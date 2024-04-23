@@ -8,7 +8,7 @@ public class TransitionToCabinOutside : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // Go to cabin outside scene
-            SceneController.instance.LoadScene("Cabin_Outside");
+            //SceneController.instance.LoadScene("Cabin_Outside");
         }
     }   
 }
