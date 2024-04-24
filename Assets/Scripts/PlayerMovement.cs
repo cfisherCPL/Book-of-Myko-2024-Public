@@ -8,6 +8,12 @@ public class PlayerMovement : MonoBehaviour
     
     public VectorValue spawnPosition;
 
+
+// Some elements needed to handle character facing.    
+    bool facingRight;
+    float inputHorizontal;
+    float inputVertical;
+
     private Rigidbody2D rb;
 
     private Vector2 movementDirection;
@@ -34,6 +40,30 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = movementDirection * movementSpeed;
+
+        inputHorizontal = Input.GetAxisRaw("Horizontal");
+        inputVertical = Input.GetAxisRaw("Vertical");
+
+        if (inputHorizontal < 0 && !facingRight)
+        {
+            FlipCharacter();
+        }
+
+        if (inputHorizontal > 0 && facingRight)
+        {
+            FlipCharacter();
+        }
+        
+    }
+
+    void FlipCharacter()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
+
     }
 
 }
