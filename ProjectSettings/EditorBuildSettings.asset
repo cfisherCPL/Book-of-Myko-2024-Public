@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mountain_Outside.unity
     guid: fb940304cef3d449c87c2afb0c8ff3ac
+  - enabled: 1
+    path: Assets/Scenes/Cabin_Interior.unity
+    guid: 1301d171db2394828983da2615c7541d
   m_configObjects: {}
