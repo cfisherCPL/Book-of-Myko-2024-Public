@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class ScoreManager : MonoBehaviour
 {
     public UnityEvent OnScoreChanged;
+    public ScoreTracker currentScore;
 
     public static ScoreManager Instance {get;private set;}
 
@@ -27,7 +28,8 @@ public class ScoreManager : MonoBehaviour
 
     public void IncreaseScore(int amount)
     {
-        score += amount;
+        currentScore.trackedScore += amount;
+        score = currentScore.trackedScore;
         OnScoreChanged.Invoke();
     }
 }
