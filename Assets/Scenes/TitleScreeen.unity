@@ -343,6 +343,7 @@ GameObject:
   - component: {fileID: 812285873}
   - component: {fileID: 812285875}
   - component: {fileID: 812285874}
+  - component: {fileID: 812285876}
   m_Layer: 5
   m_Name: Press to Start Text
   m_TagString: Untagged
@@ -466,6 +467,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812285872}
   m_CullTransparentMesh: 1
+--- !u!95 &812285876
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812285872}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 57f8d37a541f74a54beafcdc6edf98a0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1040644562
 GameObject:
   m_ObjectHideFlags: 0
@@ -27179,7 +27201,7 @@ GameObject:
   - component: {fileID: 1434295450}
   - component: {fileID: 1434295449}
   m_Layer: 0
-  m_Name: PressAnyListener
+  m_Name: PressAnyToStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27197,9 +27219,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7664af65f37fb43ddb87163ed7c23648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Cabin_Inside
+  sceneToLoad: Cabin_Interior
   playerPositionToSpawn: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: bd1bd6f16bf334b5fa294f68c680c6af, type: 2}
+  scoreToReset: {fileID: 11400000, guid: 478df219751d245caae8afdf5a6210c0, type: 2}
 --- !u!4 &1434295450
 Transform:
   m_ObjectHideFlags: 0
@@ -27370,7 +27393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 125}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736178967

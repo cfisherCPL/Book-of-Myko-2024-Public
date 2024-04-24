@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TitleScreeen.unity
     guid: f03267dda26574ba0b6a16c2c4cdcd6e
+  - enabled: 1
+    path: Assets/Scenes/SodHouse_Interior.unity
+    guid: 95daceeb5b7374af5a8c3965a9978c2a
   m_configObjects: {}

@@ -8,12 +8,14 @@ public class PressToStart : MonoBehaviour
     public string sceneToLoad;
     public Vector2 playerPositionToSpawn;
     public VectorValue playerStorage;
+    public ScoreTracker scoreToReset;
 
     // Update is called once per frame
     void Update()
     {
      if (Input.anyKey)
         {
+            scoreToReset.trackedScore = 0;
             playerStorage.initialValue = playerPositionToSpawn;
             SceneManager.LoadScene(sceneToLoad);
         }
