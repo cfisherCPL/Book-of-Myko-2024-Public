@@ -13,11 +13,16 @@ public class PressToStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (Input.anyKey)
+     if (Input.anyKey && !Input.GetKey("escape"))
         {
             scoreToReset.trackedScore = 0;
             playerStorage.initialValue = playerPositionToSpawn;
             SceneManager.LoadScene(sceneToLoad);
+        }
+    
+    else if (Input.GetKey("escape"))
+        {
+            Application.Quit();
         }
     }
 }
