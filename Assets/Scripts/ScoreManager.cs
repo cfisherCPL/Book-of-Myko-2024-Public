@@ -30,6 +30,6 @@ public class ScoreManager : MonoBehaviour
     {
         currentScore.trackedScore += amount;
         score = currentScore.trackedScore;
-        OnScoreChanged.Invoke();
+        //OnScoreChanged.Invoke();
     }
 }
