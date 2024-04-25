@@ -54,11 +54,15 @@ public class DayTimeManager : MonoBehaviour
          if (currentDay.currentDay < 6)
         {
             currentDay.currentDay += 1;
+            currentTime.currentTimeOfDay = 0;
+            Debug.Log("Time reset.");
             Debug.Log("Day changed to next.");
         }
         else
         {
             currentDay.currentDay = 0;
+            currentTime.currentTimeOfDay = 0;
+            Debug.Log("Time reset.");
             Debug.Log("Day reset.");
         }
 

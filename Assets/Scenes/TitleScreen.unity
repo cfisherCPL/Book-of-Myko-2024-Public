@@ -488,6 +488,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &892209309
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2035999492185853875, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_Name
+      value: Daylight
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.7158346
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.48367682
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.14663517
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
 --- !u!1 &1040644562
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +736,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: addcce29ae1bb469fac3f8d8055a6e26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1127,7 +1184,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: addcce29ae1bb469fac3f8d8055a6e26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27485,3 +27542,4 @@ SceneRoots:
   - {fileID: 657209912}
   - {fileID: 3503780142707894517}
   - {fileID: 1434295450}
+  - {fileID: 892209309}
