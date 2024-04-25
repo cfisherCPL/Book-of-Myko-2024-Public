@@ -500,6 +500,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Daylight
       objectReference: {fileID: 0}
+    - target: {fileID: 6806502803445743243, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806502803445743243, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806502803445743243, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7230330291255230048, guid: a61b8da7b031f4bed8c6cba9bf67ed24, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.7158346
