@@ -26,6 +26,7 @@ public class ScoreDisplay1 : MonoBehaviour
 
    public void UpdateScore(ScoreManager scoreController)
    {
-        _scoreText.text = $"Mushrooms Collected: {scoreController.score}";
+     _scoreText.text = $"Mushrooms Collected: {scoreController.score}";
    }
 }
+

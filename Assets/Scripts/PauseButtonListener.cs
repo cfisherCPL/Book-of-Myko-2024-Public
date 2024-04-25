@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseButtonListener : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
+
 
     public void Pause()
     {
@@ -13,15 +13,25 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0;
     }
 
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("TitleScreen");
-        Time.timeScale = 1;
-    }
 
     public void Resume()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
+    }
+
+    void Update()
+    {
+
+        bool pausePressed = Input.GetButtonDown("Pause");
+
+        if (pausePressed && !pauseMenu.activeSelf)
+        {
+            Pause();
+        }
+        else if (pausePressed && pauseMenu.activeSelf)
+        {
+            Resume();
+        }
     }
 }
