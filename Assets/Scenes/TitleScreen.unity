@@ -27292,6 +27292,7 @@ MonoBehaviour:
   playerPositionToSpawn: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: bd1bd6f16bf334b5fa294f68c680c6af, type: 2}
   scoreToReset: {fileID: 11400000, guid: 478df219751d245caae8afdf5a6210c0, type: 2}
+  _time: {fileID: 11400000, guid: d5b5e185083f24deda51641a6a523893, type: 2}
 --- !u!4 &1434295450
 Transform:
   m_ObjectHideFlags: 0

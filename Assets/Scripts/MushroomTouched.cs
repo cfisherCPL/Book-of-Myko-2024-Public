@@ -10,12 +10,15 @@ public class MushroomTouched : MonoBehaviour
     Collider2D trigger;
 
    [SerializeField] private int pointsPerCollect;
+   [SerializeField] private int staminaCost;
 
-   private ScoreManager _scoreController;
+    private ScoreManager _scoreController;
+   private StaminaManager _staminaController;
 
    private void Awake()
    {
         _scoreController = FindObjectOfType<ScoreManager>();
+        _staminaController = FindObjectOfType<StaminaManager>();
         soundEffect = GetComponent<AudioSource>();
         trigger = GetComponent<Collider2D>();
 
@@ -25,6 +28,7 @@ public class MushroomTouched : MonoBehaviour
     {
         soundEffect.Play();
         ScoreManager.Instance.IncreaseScore(pointsPerCollect);
+        StaminaManager.Instance.DecreaseStamina(staminaCost);
         mushroomWasTouched.Invoke();
 
         Destroy(this.gameObject,0.1f);

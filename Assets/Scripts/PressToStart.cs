@@ -9,6 +9,7 @@ public class PressToStart : MonoBehaviour
     public Vector2 playerPositionToSpawn;
     public VectorValue playerStorage;
     public ScoreTracker scoreToReset;
+    public TimeOfDay _time;
 
     // Update is called once per frame
     void Update()
@@ -16,6 +17,7 @@ public class PressToStart : MonoBehaviour
      if (Input.anyKey && !Input.GetKey("escape"))
         {
             scoreToReset.trackedScore = 0;
+            _time.currentTimeOfDay = 0;
             playerStorage.initialValue = playerPositionToSpawn;
             SceneManager.LoadScene(sceneToLoad);
         }

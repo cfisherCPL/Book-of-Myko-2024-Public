@@ -178,6 +178,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   pointsPerCollect: 1
+  staminaCost: 1
 --- !u!82 &889718518118327304
 AudioSource:
   m_ObjectHideFlags: 0

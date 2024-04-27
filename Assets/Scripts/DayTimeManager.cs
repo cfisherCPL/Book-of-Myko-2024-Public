@@ -8,11 +8,6 @@ public class DayTimeManager : MonoBehaviour
    public UnityEvent dayChanged;
    public UnityEvent timeChanged;
 
-  
-
-
-
-
    public DayOfWeek currentDay;
    public TimeOfDay currentTime;
 
