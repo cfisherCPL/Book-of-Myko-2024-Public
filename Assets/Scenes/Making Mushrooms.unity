@@ -567,6 +567,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 753135621956302560, guid: e0cf85d0691364a1abb5ca7304795ef7, type: 3}
+      propertyPath: Cavern
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753135621956302560, guid: e0cf85d0691364a1abb5ca7304795ef7, type: 3}
+      propertyPath: GigaTree
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753135621956302560, guid: e0cf85d0691364a1abb5ca7304795ef7, type: 3}
+      propertyPath: SodHouse
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 753135621956302560, guid: e0cf85d0691364a1abb5ca7304795ef7, type: 3}
+      propertyPath: flavorText
+      value: A lightly flavored mushroom for everyone.
+      objectReference: {fileID: 0}
     - target: {fileID: 1579738979560197997, guid: e0cf85d0691364a1abb5ca7304795ef7, type: 3}
       propertyPath: m_Name
       value: Basic Button
