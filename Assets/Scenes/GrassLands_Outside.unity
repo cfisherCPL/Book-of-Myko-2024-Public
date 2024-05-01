@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 60756174}
   m_Layer: 0
   m_Name: MS18
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1247,7 +1247,7 @@ GameObject:
   - component: {fileID: 247005212}
   m_Layer: 0
   m_Name: MS05
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1344,7 +1344,7 @@ GameObject:
   - component: {fileID: 332507679}
   m_Layer: 0
   m_Name: MS01
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1491,7 +1491,7 @@ GameObject:
   - component: {fileID: 488956637}
   m_Layer: 0
   m_Name: MS13
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6047,7 +6047,7 @@ GameObject:
   - component: {fileID: 720015232}
   m_Layer: 0
   m_Name: MS20
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6238,7 +6238,7 @@ GameObject:
   - component: {fileID: 917995265}
   m_Layer: 0
   m_Name: MS06
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6269,7 +6269,7 @@ GameObject:
   - component: {fileID: 929189018}
   m_Layer: 0
   m_Name: MS16
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6349,7 +6349,7 @@ GameObject:
   - component: {fileID: 948396902}
   m_Layer: 0
   m_Name: MS12
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6380,7 +6380,7 @@ GameObject:
   - component: {fileID: 965760766}
   m_Layer: 0
   m_Name: MS14
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7281,7 +7281,7 @@ GameObject:
   - component: {fileID: 1114783495}
   m_Layer: 0
   m_Name: MS15
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7438,7 +7438,7 @@ GameObject:
   - component: {fileID: 1234023329}
   m_Layer: 0
   m_Name: MS17
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7566,7 +7566,7 @@ GameObject:
   - component: {fileID: 1258739221}
   m_Layer: 0
   m_Name: MS04
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7847,7 +7847,7 @@ GameObject:
   - component: {fileID: 1354917189}
   m_Layer: 0
   m_Name: MS10
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7955,7 +7955,7 @@ GameObject:
   - component: {fileID: 1437516137}
   m_Layer: 0
   m_Name: MS02
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8063,7 +8063,7 @@ GameObject:
   - component: {fileID: 1483532827}
   m_Layer: 0
   m_Name: MS03
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8311,7 +8311,7 @@ GameObject:
   - component: {fileID: 1696733428}
   m_Layer: 0
   m_Name: MS19
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8330,6 +8330,73 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1346589542}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1708911982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1708911984}
+  - component: {fileID: 1708911983}
+  m_Layer: 0
+  m_Name: Mushroom Spawn Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1708911983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708911982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9341ee8a32c084bee8bfa461ffc049a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testMush: {fileID: 6552987616814518544, guid: 082cd0b43d234471a8210760f8fbf13b, type: 3}
+  allPotentialSpawns:
+  - {fileID: 332507678}
+  - {fileID: 1437516136}
+  - {fileID: 1483532826}
+  - {fileID: 1258739220}
+  - {fileID: 247005211}
+  - {fileID: 917995264}
+  - {fileID: 1964825762}
+  - {fileID: 1775601141}
+  - {fileID: 1791647618}
+  - {fileID: 1354917188}
+  - {fileID: 1809772924}
+  - {fileID: 948396901}
+  - {fileID: 488956636}
+  - {fileID: 965760765}
+  - {fileID: 1114783494}
+  - {fileID: 929189017}
+  - {fileID: 1234023328}
+  - {fileID: 60756173}
+  - {fileID: 1696733427}
+  - {fileID: 720015231}
+  spawnLocations: []
+--- !u!4 &1708911984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708911982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5733824, y: 2.4731207, z: -11.25199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1761768830
 PrefabInstance:
@@ -8411,7 +8478,7 @@ GameObject:
   - component: {fileID: 1775601142}
   m_Layer: 0
   m_Name: MS08
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8442,7 +8509,7 @@ GameObject:
   - component: {fileID: 1791647619}
   m_Layer: 0
   m_Name: MS09
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8473,7 +8540,7 @@ GameObject:
   - component: {fileID: 1809772925}
   m_Layer: 0
   m_Name: MS11
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8645,7 +8712,7 @@ GameObject:
   - component: {fileID: 1964825763}
   m_Layer: 0
   m_Name: MS07
-  m_TagString: Untagged
+  m_TagString: MushroomSpawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68908,3 +68975,4 @@ SceneRoots:
   - {fileID: 200728794}
   - {fileID: 1235882548}
   - {fileID: 1346589542}
+  - {fileID: 1708911984}

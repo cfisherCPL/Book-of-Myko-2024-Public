@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Music
   - Mushroom
+  - MushroomSpawner
   layers:
   - Default
   - TransparentFX
