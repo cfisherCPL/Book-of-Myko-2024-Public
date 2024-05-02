@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Mushroom_Spawner : MonoBehaviour
 {
+    public static Mushroom_Spawner Instance { get; private set; }
+
+    public AlreadySpawned mushSpawned;
+
     public GameObject testMush;
     
     public List<GameObject> allPotentialSpawns = new List<GameObject>();
@@ -11,11 +15,30 @@ public class Mushroom_Spawner : MonoBehaviour
     public List<GameObject> spawnLocations = new List<GameObject>();
 
 
+    private void Awake()
+    {
+
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        pickSpawns();
-        placeMushrooms();
+        if (!mushSpawned.alreadySpawned)
+        {
+            pickSpawns();
+            placeMushrooms();
+            mushSpawned.alreadySpawned = true;
+        }
+        
     }
 
 
@@ -30,7 +53,6 @@ public class Mushroom_Spawner : MonoBehaviour
             spawnLocations.Add(temp);
             allPotentialSpawns.RemoveAt(rnd);
         }
-
 
     }
 
