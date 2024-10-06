@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class MushroomTouched : MonoBehaviour
 {
-   public UnityEvent mushroomWasTouched;
+    public CollectableType itemType;
+    public UnityEvent mushroomWasTouched;
     AudioSource soundEffect;
     Collider2D trigger;
 
@@ -24,15 +25,27 @@ public class MushroomTouched : MonoBehaviour
 
    }
 
-    public void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        soundEffect.Play();
-        ScoreManager.Instance.IncreaseScore(pointsPerCollect);
-        StaminaManager.Instance.DecreaseStamina(staminaCost);
-        mushroomWasTouched.Invoke();
+        PlayerIsTrigger player = collision.GetComponent<PlayerIsTrigger>();
 
-        Destroy(this.gameObject,0.1f);
+        if (player)
+        {
+            soundEffect.Play();
+            ScoreManager.Instance.IncreaseScore(pointsPerCollect);
+            StaminaManager.Instance.DecreaseStamina(staminaCost);
+            mushroomWasTouched.Invoke();
+            player.inventory.Add(itemType);
+
+            Destroy(this.gameObject, 0.1f);
+        }
+        
     }
 
 
+}
+
+public enum CollectableType
+{
+    NONE, MUSHROOM
 }

@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class PlayerIsTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Awake()
+
+    public InventoryTest inventory;
+
+    private void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
-    }
-    void Start()
-    {
-        // GameObject.FindGameObjectWithTag("Music").GetComponent<MusicContinue>().PlayMusic();
- 
+        inventory = new InventoryTest(21);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
